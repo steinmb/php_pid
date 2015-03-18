@@ -33,7 +33,11 @@ class GPIO {
     {
         print "GPIO private function\n";  
     }
-    
+    /**
+     * Example init pin 27 for the first time:
+     * cd /sys/class/gpio
+     * echo 27 > export
+     */
     public function __construct($pin) 
     {
         $this->pin = $pin;
